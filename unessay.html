@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Timeline</title>
+  <style>
+
+    body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start; /* Align text to the top of the page */
+      /*justify-content: center; */
+      height: 100vh;
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+    }
+
+    .title {
+      font-size: 40px;
+      font-weight: bold;
+      margin-bottom: 10px;
+      margin: 20px 0 10px; /* Adjust top and bottom margins */
+    }
+
+    .subtitle {
+      font-size: 25px;
+      margin-bottom: 20px;
+    }
+
+    .timeline {
+      position: relative;
+      width: 100%;
+      max-width: 1800px;
+      /*margin: 0 auto; */
+      margin: 280px auto 0; /* Adjust top margin */
+
+    }
+
+    .timeline-line {
+      position: absolute;
+      width: 100%;
+      height: 2px;
+      background-color: #000;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+    .event {
+      position: absolute;
+      width: 60px; /* Adjust the width based on your image size */
+      height: 50px; /* Adjust the height based on your image size */
+      border-radius: 50%;
+      cursor: pointer;
+      transition: transform 0.3s;
+    }
+
+    .event img {
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+    }
+
+    .event-text-box {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  padding: 20px; /* Adjust the padding to a reasonable value */
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  font-size: 11px; /* Adjust font size inside the text box */
+  width: 300px; /* Adjust the width based on your design */
+  height: 260px; /* Make the text box fill the entire height */
+  text-align: left; /* Align the text to the left */
+  line-height: 1.5; /* Adjust line height for better readability */
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+.event.above-timeline .event-text-box {
+      bottom: 100%; /* Position above the event */
+    }
+
+    .event.active .event-text-box {
+      display: block;
+    }
+
+    .event:nth-child(even) {
+      top: calc(50% + 10px); /* Alternate events below the line */
+      transform: translateX(-50%);
+    }
+
+    .event:nth-child(odd) {
+      bottom: calc(50% + 10px); /* Alternate events above the line */
+      transform: translateX(-50%);
+    }
+
+    .event:hover {
+      transform: scale(1.2); /* Add a hover effect */
+    }
+
+    .event:hover .event-text-box {
+      display: block;
+    }
+
+    .event-popup {
+      display: none;
+      position: absolute;
+      background-color: #fff;
+      padding: 10px;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    } 
+  </style>
+</head>
+<body>
+<div class="title">OS 460: Racial Inequity in Policing</div>
+<div class="subtitle">Where we came from and where we're going</div>
+    
+<div class="timeline">
+  <div class="timeline-line"></div>
+  <div class="event" style="left: 10%;" onmouseover="showPopup(this)" onmouseout="hidePopup()" data-content="1960s & 70s (Context)" text-box = "The War on Crime and War on Poverty, 
+  funded and fueled by the LE Assistance Act of 1965 and the Safe Streets Act of 1968, began in earnest. The 'Southern strategy' tried to appeal to white voters through 
+  racism. The DEA was formed. Nixon and other politicians began to see crime control as a political tool. The LEAA was used to fund prison contruction in anticipation of
+  a growing prison population. MLK Jr. and Malcolm X were assassinated. US cities struggled with uprisings."
+  >
+    <img src="photos/police_image.jpg" alt="Event 0">
+    <div class="event-text-box">Text Box for Event 1 aerhglfhwel rhglk fwhlesflic4hwilgehfas</div>
+  </div>
+  <div class="event" style="left: 20%;" onmouseover="showPopup(this)" onmouseout="hidePopup()" data-content="1980s and 90s (context)" text-box = 
+  "Reagan comes into power and starts the War on Drugs during the crack epidemic. Crack sentencing was much harsher than
+  powder cocaine due to Anti Drug Abuse Act. Crime Control Act of 1994 escalated War on Drugs, increasing police resources
+  and leading to militarization of police--this militarization led to 'warrior mentality' for officers. US experiences period of most violent crime ever.
+  New Jim Crow continues to exploit Black people and reinforce racial hierarchy while being harder to prevent. Racially coded
+  language continues to be pervasive throughout country and used by leaders.">
+    <img src="photos/police_image.jpg" alt="Event 0">
+    <div class="event-text-box">Text Box for Event 1 aerhglfhwel rhglk fwhlesflic4hwilgehfas</div>
+  </div>
+  <div class="event" style="left: 30%;" onmouseover="showPopup(this)" onmouseout="hidePopup()" data-content="The Psychology of Race and Crime" text-box = 
+  "Studies show that white people are less likely (around 25% less) to support prison/justice reform when told the prisoners are Black--in fact, they may use this fact to
+  justify their stance. Studies also show that your attitudes towards race affect your attitudes towards general policy, like
+  the death penalty. People are more likely to perceive Black men as larger than white men of the same size. People are more likely to 
+  associate crime related imagery (guns, knives) with Black people than white. Similarly, people are more likely to associate Black people
+  with crime imagery than white people with crime imagery.">
+    <img src="photos/police_image.jpg" alt="Event 3">
+    <div class="event-text-box">Text Box for Event 1 aerhglfhwel rhglk fwhlesflic4hwilgehfas</div>
+  </div>
+  <div class="event" style="left: 40%;" onmouseover="showPopup(this)" onmouseout="hidePopup()" data-content="Officer Discretion" text-box = 
+  "Officers have an incredible amount of discretion. It's part of the job. There's no way to reliably have constant
+  oversight over every officer. As such, they get to choose who they pull over, who gets a ticket, who is a threat, and so on.
+  This discretion has some pros, like when an arrest or ticket is technically required by law but the officer decides not to give 
+  it based on the situation. However, there are many cons too. How does any individual officer decide who to pull over? Especially since
+  we have shown evidence of bias in the average person. Studies show officers are racially biased, pulling over, arresting, and using force
+   on POC more often then whites. Also being more rude to POC than whites." >
+    <img src="photos/police_image.jpg" alt="Event 4">
+    <div class="event-text-box">Text Box for Event 1 aerhglfhwel rhglk fwhlesflic4hwilgehfas</div>
+  </div>
+  <div class="event" style="left: 50%;" onmouseover="showPopup(this)" onmouseout="hidePopup()" data-content="Policing Methods" text-box = 
+  "There was a shift from reactive policing to proactive policing. Police went from merely responding to
+  calls proactively looking for crimes/deterring people from committing them. Since police have so much discretion, it's up to the officer to decide what's suspicious, leaving a lot of room
+  for bias. This leads into a more contemporary form of policing, Broken Windows. Broken Windows policing is where police's jobs are extended to 'upholding
+  the standards of the community.' This can be problematic because who decides what the standards are? And these standards aren't within the 
+  rule of law necessarily, leaving police with the (perceived) power to enforce anything they see fit.  " >
+    <img src="photos/police_image.jpg" alt="Event 5">
+    <div class="event-text-box">Text Box for Event 1 aerhglfhwel rhglk fwhlesflic4hwilgehfas</div>
+  </div>
+  <div class="event" style="left: 60%;" onmouseover="showPopup(this)" onmouseout="hidePopup()" data-content="Technology in Policing" text-box =
+  "As technology advances, police begin to utilize it more. Algorithmic approaches to dispatch gain popularity, such as PredPol and COMPSTAT. These
+  algorithms are designed to predict where to send police. However, there are a lot of flaws to this. Where does the data come from?
+  How can we ensure it's not biased? How can we ensure there's no feedback loops? These are also opaque. How can we trust it if 
+  we don't know how it gets its answer? On the other side of technology, body cameras grow in popularity. Another set of questions arises with these.
+  How can we enforce officer compliance? How much can we trust footage? Especially in court? " >
+    <img src="photos/police_image.jpg" alt="Event 5">
+    <div class="event-text-box">Text Box for Event 1 aerhglfhwel rhglk fwhlesflic4hwilgehfas</div>
+  </div>
+  <div class="event" style="left: 70%;" onmouseover="showPopup(this)" onmouseout="hidePopup()" data-content="Procedural Justice" text-box = 
+  "Calls for police reform are growing. The idea of procedural justice comes into view. This is a method that aims to reintorduce
+  respect into policing. If citizens respect and believe in police, then violence can be avoided. The four aspects of PJ are voice, 
+  neutrality, trustworthiness, and respect. If an officer can exhibit all four of these, will the community trust in him? In the institution?
+  Is PJ enough? Is it the bare minimum? How can PJ overcome the centuries of racism and mistrust? However, studies do show that PJ
+  can reduce crime, arrests, and police violence.">
+    <img src="photos/police_image.jpg" alt="Event 5">
+    <div class="event-text-box">Text Box for Event 1 aerhglfhwel rhglk fwhlesflic4hwilgehfas</div>
+  </div>
+  <div class="event" style="left: 80%;" onmouseover="showPopup(this)" onmouseout="hidePopup()" data-content="Psychosocial interventions & other ideas" text-box = 
+  "Are DEI trainings enough? Studies show no. So how can we nudge officers in right direction? How can we intervene in their psyche to make them not
+  act biased? WISE interventions aim to 'nudge' an officer at the right time in the right way so he acts different. But how is this replicable and 
+  consistent? When is the right time? What is the right intervention? They are highly individualized. Can we diversify the police force? Will that help?
+  Maybe, but again it may not be enough. How can we encourage the right people to apply? Can we pay officers better? But should we be defunding the police? Perhaps
+  defunding in some areas and funding in others?" >
+    <img src="photos/police_image.jpg" alt="Event 5">
+    <div class="event-text-box">Text Box for Event 1 aerhglfhwel rhglk fwhlesflic4hwilgehfas</div>
+  </div>
+  <div class="event" style="left: 90%;" onmouseover="showPopup(this)" onmouseout="hidePopup()" data-content="Where do we go from here?" text-box = 
+  "Should the police be abolished? Defunded? Funded more? Restructured? Non-police teams may help, like mental health responders and
+  community violence 'interrupters.' But if the police are 
+  going to continue to exist, how can they be improved? Should we take away their guns? But how would they be kept safe?
+  Can you improve training with PJ? Studies show yes, but how can we make the training stick? Would more oversight work? We've seen evidence 
+  of this in NYC. Should we break up the toxic camradery? But is this camradery important in such a high stress job?
+  There are more questions than answers in this half of the line, because frankly there's no clear answers for police reform in the US.">
+    <img src="photos/police_image.jpg" alt="Event 5">
+    <div class="event-text-box">Text Box for Event 1 aerhglfhwel rhglk fwhlesflic4hwilgehfas</div>
+  </div>
+  <!-- Add more events as needed -->
+
+  <div id="popup" class="event-popup"></div>
+</div>
+
+<script>
+ function showPopup(event) {
+    const popup = document.getElementById('popup');
+    const content = event.getAttribute('data-content');
+    const textBox = event.getAttribute('text-box'); 
+    const isAboveTimeline = event.getBoundingClientRect().top < document.querySelector('.timeline-line').getBoundingClientRect().top;
+
+    popup.style.display = 'block';
+
+    event.classList.toggle('above-timeline', isAboveTimeline);
+    event.querySelector('.event-text-box').innerHTML = textBox;
+   /* event.querySelector('.data-content').innerHTML = content; */
+    event.classList.toggle('active');
+    popup.innerHTML = content;
+    positionPopup(event, popup);
+  }
+
+  function hidePopup() {
+    const popup = document.getElementById('popup');
+    popup.style.display = 'none';
+    event.classList.remove('above-timeline');
+  }
+
+  function positionPopup(event, popup) {
+    const eventRect = event.getBoundingClientRect();
+    const timelineRect = document.querySelector('.timeline').getBoundingClientRect();
+
+   /* const popupTop = eventRect.top - timelineRect.top - popup.offsetHeight - 10; */
+   let popupTop;
+
+    if (event.classList.contains('above-timeline')) {
+      popupTop = eventRect.bottom - timelineRect.top + 10; // Position above the event
+    } else {
+      popupTop = eventRect.top - timelineRect.top - popup.offsetHeight - 10; // Position below the event
+    }
+
+    const popupLeft = eventRect.left - timelineRect.left + event.offsetWidth / 2 - popup.offsetWidth / 2;
+
+    popup.style.top = popupTop + 'px'; 
+    popup.style.left = popupLeft + 'px'; 
+  }  
+
+</script>
+
+</body>
+</html> 
