@@ -1,0 +1,190 @@
+/* Minimalist and modern design */
+
+body {
+    background-color: #f9fafc;  /* Soft, off-white background */
+    font-family: 'Roboto', sans-serif;  /* Clean, modern font */
+    color: #2e2e2e;
+    margin: 0;
+    padding: 0;
+  }
+  
+  ul {
+    overflow:auto;
+    line-height: 1.75;
+    font-size: 18px;
+    margin-bottom: 25px;
+    color: #3e3e3e;
+  }
+  
+  .nav {
+    background-color: #2e2e2e;  /* Dark, neutral background for the nav */
+    list-style-type: none;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  li {
+    float: left;
+  }
+  
+  ul a {
+    display: block;
+    color: #f9fafc;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 15px 25px;
+    text-decoration: none;
+    transition: color 0.3s, background-color 0.3s ease;
+  }
+  
+  li a:hover, .active a {
+    background-color: #3e50b4;  /* Soft blue hover effect */
+  }
+  
+  .socials {
+    text-align: center;
+    padding: 30px 0;
+  }
+  
+  .socials a {
+    display: inline-block;
+    margin: 0 15px;
+    font-size: 20px;
+    color: #2e2e2e;
+    text-decoration: none;
+    transition: color 0.3s ease, transform 0.3s;
+  }
+  
+  .socials a:hover {
+    color: #3e50b4;
+    transform: translateY(-5px);  /* Slide up on hover */
+  }
+
+  .content {
+    width: 70%;
+    margin: 50px auto;
+    padding: 40px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.05);
+  }
+
+    /* Circular image in the top-right corner */
+  .circular-image {
+    float:right;
+    width: 300px; /* Adjust size */
+    height: 300px; /* Same as width for a perfect circle */
+    border-radius: 40%; /* Makes the image circular */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
+    object-position: 40% 20%; /* Displays the top part of the image */
+    object-fit: cover; /* Ensures the image covers the circle without distortion */
+  }
+  
+  .image-container {
+    margin: 30px 0;
+    text-align: center;
+  }
+  
+  .image-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    transition: box-shadow 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);  /* Subtle shadow for images */
+  }
+  
+  .image-container img:hover {
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);  /* Deepen shadow on hover */
+  }
+  
+  .clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    color: #2e2e2e;
+    margin-bottom: 20px;
+    font-weight: 700;
+    text-align: left;  /* Left-align headers for a more formal look */
+    letter-spacing: 1px;
+  }
+  
+  p {
+    line-height: 1.75;
+    font-size: 18px;
+    margin-bottom: 25px;
+    color: #3e3e3e;
+  }
+  
+  a {
+    color: #3e50b4;
+    text-decoration: none;
+    font-weight: 500;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #2e2e2e;
+    color: #f9fafc;
+    font-size: 14px;
+    letter-spacing: 1px;
+  }
+  
+  .resume {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+  }
+
+  .skill-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: left;
+    align-items: stretch; 
+    gap: 10px
+}
+
+  .skill {
+    border-radius: 10px;
+    border: 3px solid #3e50b4;
+    background-color: #3e50b4;
+    padding: 5px;
+    color: #ffff;
+}
+
+.project-page {
+  margin: 30px;
+}
+
+.github-link {
+  margin-top:14px;
+  font-size:20px;
+}
+
+.github-link a{
+  color: #3e3e3e;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.github-link a:hover {
+  color: #3e50b4;
+}
+
+.github-link img {
+  width: 20px; /* Adjust size */
+  height: 20px; /* Same as width for a perfect circle */
+  display:inline;
+  border-radius: 50%; /* Makes the image circular */
+  object-fit: cover; /* Ensures the image covers the circle without distortion */
+}
