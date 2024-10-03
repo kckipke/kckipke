@@ -188,3 +188,16 @@ body {
   border-radius: 50%; /* Makes the image circular */
   object-fit: cover; /* Ensures the image covers the circle without distortion */
 }
+
+.project-image {
+  display: flex;
+  justify-content: center;  /* Center images horizontally */
+  align-items: flex-end;    /* Align images at the bottom */
+  padding-bottom: 20px;     /* Optional: Adds space at the bottom */
+}
+
+.project-image img {
+  width: 300px;          /* Limits the maximum width */
+  height: auto;              /* Maintains aspect ratio */
+  margin: 0 10px;            /* Adds space between images */
+}
