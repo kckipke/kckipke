@@ -1,0 +1,17 @@
+[
+    {
+      "title": "\"Jarvis\" Slack bot",
+      "skills": ["Python", "Slack API", "Shell scripting", "Virtual Envs"],
+      "githubLink": "https://github.com/kckipke/slack-jarvis-app",
+      "description": "This is an interactive Slack bot named \"Jarvis\" (after Tony Stark's virtual assistant in Iron Man). I created it mostly for fun/as a joke for my friends (we love to say \"Jarvis enhance\" when looking at photos) in our Slack workspace (another elaborate joke of ours). Jarvis bot can do a variety of things (none of them super functional, but entertaining nonetheless).",
+      "moreLink": "projects/jarvis/jarvis.html"
+    },
+    {
+      "title": "Project 2",
+      "skills": ["HTML", "CSS", "JavaScript"],
+      "githubLink": "https://github.com/yourusername/project-2",
+      "description": "Description for Project 2.",
+      "moreLink": "projects/project2/project2.html"
+    }
+  ]
+  

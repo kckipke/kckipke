@@ -39,10 +39,10 @@ body {
     transition: color 0.3s, background-color 0.3s ease;
   }
   
-  li a:hover, .active a {
-    background-color: #3e50b4;  /* Soft blue hover effect */
+  .nav li a.active {
+    background-color: #3e50b4; /* Soft blue hover effect */
   }
-  
+
   .socials {
     text-align: center;
     padding: 30px 0;
