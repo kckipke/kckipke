@@ -1,0 +1,1 @@
+This project was built to fill a need I had. I had a Slack workspace for a student org I was on leadership for, and we had thousands of photos stored in our Slack channel that I wanted to put in Google Photos, so I created this program to scrape the Slack photo links, process them, then upload them to Google Photos.

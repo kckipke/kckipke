@@ -1,0 +1,1 @@
+ This is an interactive Slack bot named "Jarvis" (after Tony Stark's virtual assistant in Iron Man). I created it mostly for fun as a joke for my friends (we love to say "Jarvis enhance" when looking at photos) in our Slack workspace (another elaborate joke of ours). Jarvis bot can do a variety of things (none of them super functional, but entertaining nonetheless).

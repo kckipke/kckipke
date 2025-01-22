@@ -26,7 +26,13 @@ fetch('projects/projects.json')
         <a href="${project.githubLink}"> Git Repo </a>`;
 
       const description = document.createElement('p');
-      description.innerHTML = `${project.description} <a href="${project.moreLink}">More</a>`;
+      fetch(project.description)
+        .then((res) => res.text())
+        .then((text) => {
+          description.innerHTML = `${text} <a href="${project.moreLink}">More</a>`;
+        })
+        .catch((e) => console.error('Error loading descriptions:', e));
+        
 
       projectDiv.appendChild(title);
       projectDiv.appendChild(skillList);
