@@ -1,0 +1,14 @@
+{ "jarvis": {
+            "title": "\"Jarvis\" Slack bot",
+            "skills": ["Python", "Slack API", "Shell scripting", "Virtual Envs"],
+            "github": "https://github.com/kckipke/slack-jarvis-app",
+            "description": "This is an interactive Slack bot named \"Jarvis\"...",
+            "features": [
+                "Ask users if they want to enhance an image...",
+                "Respond to his name being said in a channel...",
+                "Schedule 'hero time' with a time picker...",
+                "Nominate 'Hero of the Week'..."
+            ],
+            "images": ["projects/jarvis/jarvis-hero.png", "projects/jarvis/jarvis-time-pick.png", "projects/jarvis/jarvis-photo-req.png"]
+        }
+}

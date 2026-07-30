@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Slack to Google Photos</title>
+    <link rel="stylesheet" href="../../newstyle.css" />
+  </head>
+
+  <div id="navbar"></div>
+
+  <body>
+    <div class="project-page">
+      <h1>Slack to Google Photos</h1>
+      <div class="skill-list">
+        <div class="skill">Python</div>
+        <div class="skill">Google Photos API</div>
+        <div class="skill">Slack API</div>
+        <div class="skill">OAuth</div>
+      </div>
+      <p>
+        This CLI tool migrates photos and videos from a Slack channel into a Google Photos album.
+        I built it for a student org where years of event photos lived in Slack and needed a permanent home in Google Photos.
+      </p>
+      <p>How it works:</p>
+      <ul>
+        <li>Fetches file URLs from a Slack channel using the Slack API (with pagination and rate-limit handling).</li>
+        <li>Downloads images and optionally videos from Slack-hosted links.</li>
+        <li>Authenticates with Google Photos via OAuth and uploads files into a named album.</li>
+        <li>Accepts channel ID, Slack token, Google auth file, and album name as CLI arguments.</li>
+      </ul>
+    </div>
+  </body>
+  <script src="../../scripts/nav_script.js"></script>
+</html>

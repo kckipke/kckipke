@@ -4,7 +4,7 @@ fetch('projects/projects.json')
   .then((projects) => {
     const container = document.getElementById('projects-container');
 
-    projects.forEach((project) => {
+    Object.entries(projects).forEach(([proj_id, project]) => {
       const projectDiv = document.createElement('div');
       projectDiv.classList.add('content');
 
@@ -29,7 +29,7 @@ fetch('projects/projects.json')
       fetch(project.description)
         .then((res) => res.text())
         .then((text) => {
-          description.innerHTML = `${text} <a href="${project.moreLink}">More</a>`;
+          description.innerHTML = `${text} <a href="${project.moreLink}" class="project-link" data-project=${proj_id}>More</a>`;
         })
         .catch((e) => console.error('Error loading descriptions:', e));
         
@@ -38,6 +38,7 @@ fetch('projects/projects.json')
       projectDiv.appendChild(skillList);
       projectDiv.appendChild(githubLinkDiv);
       projectDiv.appendChild(description);
+      console.log(title)
 
       document.body.appendChild(projectDiv);
     });

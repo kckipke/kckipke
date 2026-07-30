@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Voter behavior via derandomized ballot data</title>
+    <link rel="stylesheet" href="../../newstyle.css" />
+  </head>
+
+  <div id="navbar"></div>
+
+  <body>
+    <div class="project-page">
+      <h1>Voter behavior via derandomized ballot data</h1>
+      <div class="skill-list">
+        <div class="skill">Python</div>
+        <div class="skill">Election security</div>
+        <div class="skill">Data analysis</div>
+        <div class="skill">Research</div>
+      </div>
+      <div class="github-link">
+        <img class="github-link" src="../../photos/github_logo.png">
+        <a href="https://github.com/research/dvsorder"> DVSorder Tool </a>
+      </div>
+      <p>
+        This EECS 498 research project investigates the <a href="https://DVSorder.org">DVSorder vulnerability</a> —
+        a flaw in Dominion voting systems where ballot order can be inferred from cast-vote records.
+        My work extended the upstream DVSorder tool with analysis scripts that cross-reference unshuffled ballot data
+        with tabulator machine logs to reconstruct the exact order votes were cast.
+      </p>
+      <p>Features:</p>
+      <ul>
+        <li>Parsed Dominion cast-vote record (CVR) exports and ballot image archives.</li>
+        <li>Correlated DVSorder output with San Francisco 2020 and Alaska 2022 tabulator machine logs.</li>
+        <li>Handled multi-encoding log files (Windows-1252, MacRoman, chardet fallback).</li>
+        <li>Reconstructed vote order by matching ballot cast timestamps from scanner logs.</li>
+        <li>Produced structured JSON linking voter position, ballot ID, and cast time for behavioral analysis.</li>
+        <li>Final paper: "Voter Behavior via Derandomized Ballot Data" (EECS 498).</li>
+      </ul>
+    </div>
+  </body>
+  <script src="../../scripts/nav_script.js"></script>
+</html>

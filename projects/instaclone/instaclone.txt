@@ -1,0 +1,1 @@
+A full-stack Instagram-style social app from EECS 485 with a Flask/SQLite backend and React/TypeScript frontend for posts, likes, comments, and follow relationships.

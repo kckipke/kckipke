@@ -1,0 +1,1 @@
+An EECS 482 operating systems project implementing a virtual memory pager in C++ with clock-based page replacement, swap space, and file-backed page mappings.

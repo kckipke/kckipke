@@ -1,0 +1,1 @@
+A custom Unix shell built for EECS 201 (Intro to Computer Systems) with built-in commands, external program execution via fork/exec, and process management.

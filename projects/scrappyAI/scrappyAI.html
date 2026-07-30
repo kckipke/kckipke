@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>ScrappyAI recipe chatbot</title>
+    <link rel="stylesheet" href="../../newstyle.css" />
+  </head>
+
+  <div id="navbar"></div>
+
+  <body>
+    <div class="project-page">
+      <h1>ScrappyAI recipe chatbot</h1>
+      <div class="skill-list">
+        <div class="skill">Python</div>
+        <div class="skill">Flask</div>
+        <div class="skill">OpenAI API</div>
+        <div class="skill">SQLite</div>
+        <div class="skill">Full Stack</div>
+      </div>
+      <p>
+        ScrappyAI (Winner Winner Chicken Dinner) is a conversational kitchen helper built for EECS 449.
+        Users enter ingredients and preferences, and the chatbot generates complete recipes they can save, revisit, and ask follow-up questions about.
+      </p>
+      <p>Features:</p>
+      <ul>
+        <li>Multi-step chat flow: ingredients → generated recipe → save → optional image generation.</li>
+        <li>Recipe persistence with a saved-recipes page and delete support via SQLite.</li>
+        <li>Follow-up Q&amp;A about generated recipes in conversational context.</li>
+        <li>Optional DALL-E 3 image generation only when the user requests it (saves compute).</li>
+        <li>User registration and login with Flask session-based auth.</li>
+        <li>"Make it special" modes for dietary tweaks like spicy, vegetarian, or kosher.</li>
+      </ul>
+    </div>
+  </body>
+  <script src="../../scripts/nav_script.js"></script>
+</html>

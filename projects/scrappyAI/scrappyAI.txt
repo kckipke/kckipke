@@ -1,0 +1,1 @@
+Winner Winner Chicken Dinner is a Flask-based recipe chatbot that turns a list of ingredients and cuisine preferences into full recipes using GPT-4o-mini, with optional DALL-E 3 dish images and SQLite-backed recipe saving.

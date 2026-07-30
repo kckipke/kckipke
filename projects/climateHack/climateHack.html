@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>ClimateHack.AI satellite nowcasting</title>
+    <link rel="stylesheet" href="../../newstyle.css" />
+  </head>
+
+  <div id="navbar"></div>
+
+  <body>
+    <div class="project-page">
+      <h1>ClimateHack.AI satellite nowcasting</h1>
+      <div class="skill-list">
+        <div class="skill">Python</div>
+        <div class="skill">PyTorch</div>
+        <div class="skill">WAE-GAN</div>
+        <div class="skill">Deep learning</div>
+      </div>
+      <p>
+        This project was my entry for the ClimateHack.AI competition: predict the next two hours of UK Met Office
+        rain-radar satellite imagery from twelve past 128×128 frames. I explored generative deep learning approaches
+        to the nowcasting problem.
+      </p>
+      <p>Features:</p>
+      <ul>
+        <li>WAE-GAN architecture with convolutional encoder, transposed-convolution decoder, and MLP discriminator.</li>
+        <li>Joint reconstruction (MSE) and adversarial training with separate optimizers and learning-rate schedulers.</li>
+        <li>Custom dataset loader for preprocessed climate satellite data (xarray, 5-minute intervals).</li>
+        <li>Also explored DCGAN and convolutional autoencoder baselines for comparison.</li>
+        <li>MS-SSIM loss for perceptual image similarity evaluation.</li>
+        <li>DOXA submission pipeline targeting 24×64×64 output frames from 12×128×128 input sequences.</li>
+      </ul>
+    </div>
+  </body>
+  <script src="../../scripts/nav_script.js"></script>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>EECS 201 Unix shell</title>
+    <link rel="stylesheet" href="../../newstyle.css" />
+  </head>
+
+  <div id="navbar"></div>
+
+  <body>
+    <div class="project-page">
+      <h1>EECS 201 Unix shell</h1>
+      <div class="skill-list">
+        <div class="skill">C</div>
+        <div class="skill">Unix</div>
+        <div class="skill">Process management</div>
+        <div class="skill">Systems programming</div>
+      </div>
+      <div class="github-link">
+        <img class="github-link" src="../../photos/github_logo.png">
+        <a href="https://gitlab.eecs.umich.edu/kckipke/eecs201-basic-shell"> Git Repo </a>
+      </div>
+      <p>
+        This is my EECS 201 shell assignment — a from-scratch Unix shell that reads commands, manages processes,
+        and handles built-in navigation. It was my first deep dive into how shells actually work under the hood.
+      </p>
+      <p>Features:</p>
+      <ul>
+        <li>Interactive REPL with a custom prompt showing <code>USER:cwd$</code>.</li>
+        <li>Built-in <code>cd</code> (with <code>HOME</code> fallback) and <code>exit</code> with optional exit code.</li>
+        <li>External command execution via <code>fork</code>, <code>execvp</code>, and <code>waitpid</code>.</li>
+        <li>EOF handling (Ctrl-D) and empty-input reprompting.</li>
+        <li>Graded via the EECS 201 GitLab autograder infrastructure.</li>
+      </ul>
+    </div>
+  </body>
+  <script src="../../scripts/nav_script.js"></script>
+</html>

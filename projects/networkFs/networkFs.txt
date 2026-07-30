@@ -1,0 +1,1 @@
+An EECS 482 project implementing a multi-threaded TCP network file server with a block-based on-disk filesystem and fine-grained concurrent read/write locking.

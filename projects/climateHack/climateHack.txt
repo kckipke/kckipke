@@ -1,0 +1,1 @@
+A ClimateHack.AI competition project that uses a Wasserstein Autoencoder GAN (WAE-GAN) in PyTorch to predict the next two hours of UK satellite rain-radar imagery from past frames.

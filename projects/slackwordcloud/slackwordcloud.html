@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Slack word cloud creator</title>
+    <link rel="stylesheet" href="../../newstyle.css" />
+  </head>
+
+  <div id="navbar"></div>
+
+  <body>
+    <div class="project-page">
+      <h1>Slack word cloud creator</h1>
+      <div class="skill-list">
+        <div class="skill">Python</div>
+        <div class="skill">Slack API</div>
+        <div class="skill">WordCloud</div>
+        <div class="skill">Data processing</div>
+      </div>
+      <p>
+        This project visualizes how my Slack workspace actually talks by turning channel message history into word clouds.
+        It was built for a student org workspace to see which words dominate each channel's conversation.
+      </p>
+      <p>Features:</p>
+      <ul>
+        <li>Lists all channels the bot is a member of via the Slack conversations API.</li>
+        <li>Paginates through full message history for each channel, with rate-limit backoff.</li>
+        <li>Cleans message text (strips punctuation, lowercases) before aggregating word frequencies.</li>
+        <li>Generates a styled WordCloud image per channel, saved to a local <code>clouds/</code> directory.</li>
+      </ul>
+    </div>
+  </body>
+  <script src="../../scripts/nav_script.js"></script>
+</html>

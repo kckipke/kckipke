@@ -1,0 +1,1 @@
+A Python script that pulls message history from every Slack channel I'm in, cleans and tokenizes the text, and generates a word cloud per channel using WordCloud and matplotlib.

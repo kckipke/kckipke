@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Network file server simulator</title>
+    <link rel="stylesheet" href="../../newstyle.css" />
+  </head>
+
+  <div id="navbar"></div>
+
+  <body>
+    <div class="project-page">
+      <h1>Network file server simulator</h1>
+      <div class="skill-list">
+        <div class="skill">C++</div>
+        <div class="skill">TCP sockets</div>
+        <div class="skill">Concurrency</div>
+        <div class="skill">File systems</div>
+      </div>
+      <div class="github-link">
+        <img class="github-link" src="../../photos/github_logo.png">
+        <a href="https://github.com/eecs482/kckipke.maloneyn.4"> Git Repo </a>
+      </div>
+      <p>
+        This EECS 482 project implements a network file server over TCP — clients send text protocol commands
+        to create, delete, read, and write files and directories on a block-based on-disk filesystem.
+        The server handles multiple concurrent clients with per-block read/write locks.
+      </p>
+      <p>Features:</p>
+      <ul>
+        <li>TCP server with a thread-per-connection model using Boost threads.</li>
+        <li>Block-based filesystem with inodes, directory entries, and free-block tracking.</li>
+        <li>CRUD operations: create/delete files and directories, read/write blocks.</li>
+        <li>Fine-grained concurrency via <code>boost::shared_mutex</code> per disk block plus a global mutex.</li>
+        <li>Request validation with Boost regex; handles deep paths, full disks, and concurrent clients.</li>
+      </ul>
+    </div>
+  </body>
+  <script src="../../scripts/nav_script.js"></script>
+</html>

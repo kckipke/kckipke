@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Virtual memory pager simulator</title>
+    <link rel="stylesheet" href="../../newstyle.css" />
+  </head>
+
+  <div id="navbar"></div>
+
+  <body>
+    <div class="project-page">
+      <h1>Virtual memory pager simulator</h1>
+      <div class="skill-list">
+        <div class="skill">C++</div>
+        <div class="skill">Operating systems</div>
+        <div class="skill">Virtual memory</div>
+        <div class="skill">Page replacement</div>
+      </div>
+      <div class="github-link">
+        <img class="github-link" src="../../photos/github_logo.png">
+        <a href="https://github.com/eecs482/kckipke.maloneyn.3"> Git Repo </a>
+      </div>
+      <p>
+        This EECS 482 project implements a virtual memory pager — the layer between user processes and physical RAM.
+        It manages page tables, physical memory frames, swap space, and file-backed mappings for multiple processes,
+        handling page faults and evictions with a clock replacement algorithm.
+      </p>
+      <p>Features:</p>
+      <ul>
+        <li>Full pager API: <code>vm_init</code>, <code>vm_create</code>, <code>vm_switch</code>, <code>vm_fault</code>, <code>vm_map</code>, <code>vm_destroy</code>.</li>
+        <li>Clock algorithm page replacement with reference and dirty bit tracking.</li>
+        <li>Swap space management for anonymous (non-file-backed) pages.</li>
+        <li>File-backed page sharing across processes mapping the same file/block.</li>
+        <li>Process forking with arena duplication and a pinned zero page.</li>
+      </ul>
+    </div>
+  </body>
+  <script src="../../scripts/nav_script.js"></script>
+</html>

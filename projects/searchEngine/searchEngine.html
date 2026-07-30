@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Distributed search engine</title>
+    <link rel="stylesheet" href="../../newstyle.css" />
+  </head>
+
+  <div id="navbar"></div>
+
+  <body>
+    <div class="project-page">
+      <h1>Distributed search engine</h1>
+      <div class="skill-list">
+        <div class="skill">Python</div>
+        <div class="skill">Flask</div>
+        <div class="skill">MapReduce</div>
+        <div class="skill">PageRank</div>
+        <div class="skill">Multithreading</div>
+      </div>
+      <div class="github-link">
+        <img class="github-link" src="../../photos/github_logo.png">
+        <a href="https://github.com/husainsaifuddin/p5-485"> Git Repo </a>
+      </div>
+      <p>
+        This EECS 485 project implements a miniature Google-style search engine end to end.
+        A MapReduce pipeline crawls and indexes HTML documents, computes PageRank scores, and a distributed
+        Flask server returns ranked results by fanning queries out to three index segment servers in parallel.
+      </p>
+      <p>Features:</p>
+      <ul>
+        <li>6-job MapReduce pipeline: document count, HTML parsing, inverted index, and PageRank integration.</li>
+        <li>HTML parsing with BeautifulSoup; stopword filtering and term normalization.</li>
+        <li>TF-IDF + PageRank hybrid scoring with an adjustable weight parameter.</li>
+        <li>Distributed architecture: one search server + three index segment servers.</li>
+        <li>Parallel query fan-out via threading; returns top-10 ranked results.</li>
+      </ul>
+    </div>
+  </body>
+  <script src="../../scripts/nav_script.js"></script>
+</html>
