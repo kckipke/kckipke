@@ -1,1 +1,1 @@
-A distributed search engine from EECS 485 built with a 6-stage MapReduce pipeline for crawling, indexing, and PageRank scoring, served through a multithreaded Flask search server.
+A distributed search engine built with a 6-stage MapReduce pipeline for crawling, indexing, and PageRank scoring, served through a multithreaded Flask search server.

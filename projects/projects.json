@@ -1,4 +1,32 @@
 {
+    "scrappyAI": {
+      "title": "ScrappyAI recipe chatbot",
+      "skills": ["Python", "Flask", "OpenAI API", "SQLite", "Full Stack"],
+      "githubLink": "https://github.com/pandanale/chickenDinner",
+      "description": "projects/scrappyAI/scrappyAI.txt",
+      "moreLink": "projects/scrappyAI/scrappyAI.html"
+    },
+    "slackgp": {
+      "title": "Slack to Google Photos",
+      "skills": ["Python", "Google Photos API", "Slack API", "OAuth"],
+      "githubLink": "https://github.com/kckipke/slack-to-google-photos",
+      "description": "projects/slack-to-gp/slack-to-gp.txt",
+      "moreLink": "projects/slack-to-gp/slack-to-gp.html"
+    },
+    "slackwordcloud": {
+      "title": "Slack word cloud creator",
+      "skills": ["Python", "Slack API", "WordCloud", "Data processing"],
+      "githubLink": "https://github.com/kckipke/slack-word-cloud",
+      "description": "projects/slackwordcloud/slackwordcloud.txt",
+      "moreLink": "projects/slackwordcloud/slackwordcloud.html"
+    },
+    "climateHack": {
+      "title": "ClimateHack.AI satellite nowcasting",
+      "skills": ["Python", "PyTorch", "WAE-GAN", "Deep learning"],
+      "githubLink": "",
+      "description": "projects/climateHack/climateHack.txt",
+      "moreLink": "projects/climateHack/climateHack.html"
+    },
     "jarvis": {
       "title": "\"Jarvis\" Slack bot",
       "skills": ["Python", "Slack API", "Shell scripting"],
@@ -6,73 +34,45 @@
       "description": "projects/jarvis/jarvis.txt",
       "moreLink": "projects/jarvis/jarvis.html"
     },
-    "slackgp": {
-      "title": "Slack to Google Photos",
-      "skills": ["Python", "Google Photos API", "Slack API", "OAuth"],
-      "githubLink": "#",
-      "description": "projects/slack-to-gp/slack-to-gp.txt",
-      "moreLink": "projects/slack-to-gp/slack-to-gp.html"
-    },
-    "slackwordcloud": {
-      "title": "Slack word cloud creator",
-      "skills": ["Python", "Slack API", "WordCloud", "Data processing"],
-      "githubLink": "#",
-      "description": "projects/slackwordcloud/slackwordcloud.txt",
-      "moreLink": "projects/slackwordcloud/slackwordcloud.html"
-    },
-    "scrappyAI": {
-      "title": "ScrappyAI recipe chatbot",
-      "skills": ["Python", "Flask", "OpenAI API", "SQLite", "Full Stack"],
-      "githubLink": "#",
-      "description": "projects/scrappyAI/scrappyAI.txt",
-      "moreLink": "projects/scrappyAI/scrappyAI.html"
-    },
-    "climateHack": {
-      "title": "ClimateHack.AI satellite nowcasting",
-      "skills": ["Python", "PyTorch", "WAE-GAN", "Deep learning"],
-      "githubLink": "#",
-      "description": "projects/climateHack/climateHack.txt",
-      "moreLink": "projects/climateHack/climateHack.html"
-    },
-    "minishell": {
-      "title": "EECS 201 Unix shell",
-      "skills": ["C", "Unix", "Process management", "Systems programming"],
-      "githubLink": "https://gitlab.eecs.umich.edu/kckipke/eecs201-basic-shell",
-      "description": "projects/minishell/minishell.txt",
-      "moreLink": "projects/minishell/minishell.html"
-    },
-    "instaclone": {
-      "title": "Insta485 Instagram clone",
-      "skills": ["Python", "Flask", "React", "TypeScript", "SQLite", "Full Stack"],
-      "githubLink": "https://github.com/husainsaifuddin/p3-485",
-      "description": "projects/instaclone/instaclone.txt",
-      "moreLink": "projects/instaclone/instaclone.html"
-    },
     "electionPaper": {
       "title": "Voter behavior via derandomized ballot data",
       "skills": ["Python", "Election security", "Data analysis", "Research"],
-      "githubLink": "https://github.com/research/dvsorder",
+      "githubLink": "",
       "description": "projects/electionPaper/electionPaper.txt",
       "moreLink": "projects/electionPaper/electionPaper.html"
+    },
+    "instaclone": {
+      "title": "Instagram clone",
+      "skills": ["Python", "Flask", "React", "TypeScript", "SQLite", "Full Stack"],
+      "githubLink": "",
+      "description": "projects/instaclone/instaclone.txt",
+      "moreLink": "projects/instaclone/instaclone.html"
+    },
+    "minishell": {
+      "title": "Unix mini shell",
+      "skills": ["C", "Unix", "Process management", "Systems programming"],
+      "githubLink": "",
+      "description": "projects/minishell/minishell.txt",
+      "moreLink": "projects/minishell/minishell.html"
     },
     "searchEngine": {
       "title": "Distributed search engine",
       "skills": ["Python", "Flask", "MapReduce", "PageRank", "Multithreading"],
-      "githubLink": "https://github.com/husainsaifuddin/p5-485",
+      "githubLink": "",
       "description": "projects/searchEngine/searchEngine.txt",
       "moreLink": "projects/searchEngine/searchEngine.html"
     },
     "pager": {
       "title": "Virtual memory pager simulator",
       "skills": ["C++", "Operating systems", "Virtual memory", "Page replacement"],
-      "githubLink": "https://github.com/eecs482/kckipke.maloneyn.3",
+      "githubLink": "",
       "description": "projects/pager/pager.txt",
       "moreLink": "projects/pager/pager.html"
     },
     "networkFs": {
       "title": "Network file server simulator",
       "skills": ["C++", "TCP sockets", "Concurrency", "File systems"],
-      "githubLink": "https://github.com/eecs482/kckipke.maloneyn.4",
+      "githubLink": "",
       "description": "projects/networkFs/networkFs.txt",
       "moreLink": "projects/networkFs/networkFs.html"
     }

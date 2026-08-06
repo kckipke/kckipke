@@ -10,6 +10,7 @@ fetch('projects/projects.json')
 
       const title = document.createElement('h1');
       title.textContent = project.title;
+      projectDiv.appendChild(title);
 
       const skillList = document.createElement('div');
       skillList.classList.add('skill-list');
@@ -19,11 +20,15 @@ fetch('projects/projects.json')
         skillDiv.textContent = skill;
         skillList.appendChild(skillDiv);
       });
+      projectDiv.appendChild(skillList);
 
-      const githubLinkDiv = document.createElement('div');
-      githubLinkDiv.classList.add('github-link');
-      githubLinkDiv.innerHTML = `<img class="github-link" src="photos/github_logo.png"> 
-        <a href="${project.githubLink}"> Git Repo </a>`;
+      if (project.githubLink != "") {
+        const githubLinkDiv = document.createElement('div');
+        githubLinkDiv.classList.add('github-link');
+        githubLinkDiv.innerHTML = `<img class="github-link" src="photos/github_logo.png"> 
+          <a href="${project.githubLink} target="_blank" rel="noopener noreferrer"> Git Repo </a>`;
+        projectDiv.appendChild(githubLinkDiv);
+      }
 
       const description = document.createElement('p');
       fetch(project.description)
@@ -32,12 +37,8 @@ fetch('projects/projects.json')
           description.innerHTML = `${text} <a href="${project.moreLink}" class="project-link" data-project=${proj_id}>More</a>`;
         })
         .catch((e) => console.error('Error loading descriptions:', e));
-        
-
-      projectDiv.appendChild(title);
-      projectDiv.appendChild(skillList);
-      projectDiv.appendChild(githubLinkDiv);
       projectDiv.appendChild(description);
+
       console.log(title)
 
       document.body.appendChild(projectDiv);

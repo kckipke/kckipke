@@ -1,1 +1,1 @@
-An EECS 498 research project analyzing voter behavior by reconstructing ballot cast order from Dominion voting machine logs and the DVSorder ballot-unshuffle vulnerability.
+A research project analyzing voter behavior by reconstructing ballot cast order from Dominion voting machine logs and the DVSorder ballot-unshuffle vulnerability.
