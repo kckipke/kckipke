@@ -26,7 +26,7 @@ fetch('projects/projects.json')
         const githubLinkDiv = document.createElement('div');
         githubLinkDiv.classList.add('github-link');
         githubLinkDiv.innerHTML = `<img class="github-link" src="photos/github_logo.png"> 
-          <a href="${project.githubLink} target="_blank" rel="noopener noreferrer"> Git Repo </a>`;
+          <a href="${project.githubLink}" target="_blank" rel="noopener noreferrer"> Git Repo </a>`;
         projectDiv.appendChild(githubLinkDiv);
       }
 
